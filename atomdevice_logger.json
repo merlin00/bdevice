@@ -23,7 +23,7 @@
 		"loggers": {
 				"device": {
 						"level": "DEBUG",
-						"handlers": ["device_log_file"]
+						"handlers": ["console"]
 				}
 		}
 }

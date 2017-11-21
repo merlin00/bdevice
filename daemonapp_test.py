@@ -7,9 +7,10 @@ import os
 
 class SensorApp(DaemonApp):
     def run(self, path):
-        path += path + '/'
-        dev = AtomDevice(path + 'deamonapp.ini',
-                         path + 'deamonapp_logger.json')
+        path += '/'
+        print(path)
+        dev = AtomDevice(path + 'daemonapp.ini',
+                         path + 'daemonapp_logger.json')
 
         info = dev.scan_network(10000)
         if dev.update(info):
